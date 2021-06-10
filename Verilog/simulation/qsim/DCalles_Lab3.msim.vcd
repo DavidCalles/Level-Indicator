@@ -1,0 +1,219 @@
+$comment
+	File created using the following command:
+		vcd file DCalles_Lab3.msim.vcd -direction
+$end
+$date
+	Thu Jun 10 12:02:40 2021
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module DCalles_Lab3_vlg_vec_tst $end
+$var reg 6 ! Sw [5:0] $end
+$var wire 1 " Green $end
+$var wire 1 # Red $end
+$var wire 1 $ Segments [6] $end
+$var wire 1 % Segments [5] $end
+$var wire 1 & Segments [4] $end
+$var wire 1 ' Segments [3] $end
+$var wire 1 ( Segments [2] $end
+$var wire 1 ) Segments [1] $end
+$var wire 1 * Segments [0] $end
+
+$scope module i1 $end
+$var wire 1 + gnd $end
+$var wire 1 , vcc $end
+$var wire 1 - unknown $end
+$var tri1 1 . devclrn $end
+$var tri1 1 / devpor $end
+$var tri1 1 0 devoe $end
+$var wire 1 1 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 2 Sw[2]~input_o $end
+$var wire 1 3 Sw[0]~input_o $end
+$var wire 1 4 Sw[4]~input_o $end
+$var wire 1 5 Sw[1]~input_o $end
+$var wire 1 6 Sw[3]~input_o $end
+$var wire 1 7 Sw[5]~input_o $end
+$var wire 1 8 RGIndicator1|WideAnd0~combout $end
+$var wire 1 9 comb_3|WideOr6~0_combout $end
+$var wire 1 : comb_3|WideOr5~0_combout $end
+$var wire 1 ; comb_3|Decoder0~0_combout $end
+$var wire 1 < comb_3|WideOr2~0_combout $end
+$var wire 1 = comb_3|WideOr1~0_combout $end
+$var wire 1 > comb_3|WideOr0~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b111111 !
+0"
+1#
+0*
+1)
+0(
+0'
+0&
+0%
+0$
+0+
+1,
+x-
+1.
+1/
+10
+01
+12
+13
+14
+15
+16
+17
+18
+09
+1:
+0;
+0<
+0=
+0>
+$end
+#40000
+b11111 !
+07
+1<
+08
+1"
+0#
+1&
+#100000
+b1111 !
+04
+0:
+19
+1*
+1'
+0)
+#190000
+b111 !
+06
+1=
+09
+0*
+0'
+1%
+#310000
+b11 !
+02
+0<
+1;
+1(
+0&
+#380000
+b1 !
+05
+1>
+1<
+0;
+19
+1*
+1'
+0(
+1&
+1$
+#440000
+b0 !
+03
+0=
+0<
+09
+0*
+0'
+0&
+0%
+#510000
+b100000 !
+b110000 !
+b111000 !
+b111100 !
+b111110 !
+b111111 !
+13
+15
+12
+16
+14
+17
+0>
+1:
+18
+0"
+1#
+1)
+0$
+#580000
+b11111 !
+b1111 !
+b111 !
+b11 !
+b1 !
+b0 !
+03
+05
+02
+06
+04
+07
+1>
+0:
+08
+1"
+0#
+0)
+1$
+#630000
+b10000 !
+b11000 !
+16
+14
+0>
+1=
+1;
+1(
+1%
+0$
+#680000
+b1000 !
+b0 !
+06
+04
+1>
+0=
+0;
+0(
+0%
+1$
+#760000
+b100 !
+12
+1=
+1<
+19
+1*
+1'
+1&
+1%
+#840000
+b0 !
+02
+0=
+0<
+09
+0*
+0'
+0&
+0%
+#1000000

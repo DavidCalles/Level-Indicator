@@ -1,0 +1,19 @@
+
+// Module for the green and red indicators
+
+//module DCalles_Lab1 (a, b, y); 
+//    input   a, b; 
+//    output  y;
+//	   //assign y = a&b;
+//    and and1 (y, a, b);
+//endmodule
+
+module RGIndicator (input [5:0] Sw,
+						  output 	Red,
+										Green); 
+
+// Define architecture
+assign Red   = &Sw;
+assign Green = ~&Sw;
+
+endmodule

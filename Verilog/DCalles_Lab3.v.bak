@@ -1,0 +1,11 @@
+
+
+module RGIndicator (input [5:0] Sw,
+						  output 	Red,
+										Green); 
+
+// Define architecture
+assign Red   = &Sw;
+assign Green = ~&Sw;
+
+endmodule

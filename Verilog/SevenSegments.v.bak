@@ -1,0 +1,15 @@
+
+
+module onesAdder( input [5:0] levels,
+						output[3:0] count);
+
+	integer i;
+
+	always@(levels)
+	begin
+		 count = 0;  							//Count variable
+		 for(i=0; i<5; i=i+1)
+			  count = count + levels[i]; 	//Add the bit to the count.
+	end
+
+endmodule
