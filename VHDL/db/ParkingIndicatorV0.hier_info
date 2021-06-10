@@ -1,0 +1,99 @@
+|ParkingIndicatorV0
+Sw[0] => RGIndicator:RGIndicator1.Levels[0]
+Sw[0] => OnesAdder:OnesAdder1.binVect[0]
+Sw[1] => RGIndicator:RGIndicator1.Levels[1]
+Sw[1] => OnesAdder:OnesAdder1.binVect[1]
+Sw[2] => RGIndicator:RGIndicator1.Levels[2]
+Sw[2] => OnesAdder:OnesAdder1.binVect[2]
+Sw[3] => RGIndicator:RGIndicator1.Levels[3]
+Sw[3] => OnesAdder:OnesAdder1.binVect[3]
+Sw[4] => RGIndicator:RGIndicator1.Levels[4]
+Sw[4] => OnesAdder:OnesAdder1.binVect[4]
+Sw[5] => RGIndicator:RGIndicator1.Levels[5]
+Sw[5] => OnesAdder:OnesAdder1.binVect[5]
+Red <= RGIndicator:RGIndicator1.R
+Green <= RGIndicator:RGIndicator1.G
+Segments[0] <= SevenSegments:SevenSegments1.segmentLed[0]
+Segments[1] <= SevenSegments:SevenSegments1.segmentLed[1]
+Segments[2] <= SevenSegments:SevenSegments1.segmentLed[2]
+Segments[3] <= SevenSegments:SevenSegments1.segmentLed[3]
+Segments[4] <= SevenSegments:SevenSegments1.segmentLed[4]
+Segments[5] <= SevenSegments:SevenSegments1.segmentLed[5]
+Segments[6] <= SevenSegments:SevenSegments1.segmentLed[6]
+
+
+|ParkingIndicatorV0|RGIndicator:RGIndicator1
+Levels[0] => R.IN0
+Levels[1] => R.IN1
+Levels[2] => R.IN1
+Levels[3] => R.IN1
+Levels[4] => R.IN1
+Levels[5] => R.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+G <= R.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ParkingIndicatorV0|OnesAdder:OnesAdder1
+binVect[0] => Add0.IN2
+binVect[0] => count.DATAA
+binVect[1] => count.OUTPUTSELECT
+binVect[1] => count.OUTPUTSELECT
+binVect[2] => count.OUTPUTSELECT
+binVect[2] => count.OUTPUTSELECT
+binVect[2] => count.OUTPUTSELECT
+binVect[3] => count.OUTPUTSELECT
+binVect[3] => count.OUTPUTSELECT
+binVect[3] => count.OUTPUTSELECT
+binVect[3] => count.OUTPUTSELECT
+binVect[4] => count.OUTPUTSELECT
+binVect[4] => count.OUTPUTSELECT
+binVect[4] => count.OUTPUTSELECT
+binVect[4] => count.OUTPUTSELECT
+binVect[5] => count.OUTPUTSELECT
+binVect[5] => count.OUTPUTSELECT
+binVect[5] => count.OUTPUTSELECT
+binVect[5] => count.OUTPUTSELECT
+onesVect[0] <= count.DB_MAX_OUTPUT_PORT_TYPE
+onesVect[1] <= count.DB_MAX_OUTPUT_PORT_TYPE
+onesVect[2] <= count.DB_MAX_OUTPUT_PORT_TYPE
+onesVect[3] <= count.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ParkingIndicatorV0|SevenSegments:SevenSegments1
+binNumber[0] => Mux0.IN19
+binNumber[0] => Mux1.IN19
+binNumber[0] => Mux2.IN19
+binNumber[0] => Mux3.IN19
+binNumber[0] => Mux4.IN19
+binNumber[0] => Mux5.IN19
+binNumber[0] => Mux6.IN19
+binNumber[1] => Mux0.IN18
+binNumber[1] => Mux1.IN18
+binNumber[1] => Mux2.IN18
+binNumber[1] => Mux3.IN18
+binNumber[1] => Mux4.IN18
+binNumber[1] => Mux5.IN18
+binNumber[1] => Mux6.IN18
+binNumber[2] => Mux0.IN17
+binNumber[2] => Mux1.IN17
+binNumber[2] => Mux2.IN17
+binNumber[2] => Mux3.IN17
+binNumber[2] => Mux4.IN17
+binNumber[2] => Mux5.IN17
+binNumber[2] => Mux6.IN17
+binNumber[3] => Mux0.IN16
+binNumber[3] => Mux1.IN16
+binNumber[3] => Mux2.IN16
+binNumber[3] => Mux3.IN16
+binNumber[3] => Mux4.IN16
+binNumber[3] => Mux5.IN16
+binNumber[3] => Mux6.IN16
+segmentLed[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+segmentLed[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+segmentLed[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+segmentLed[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+segmentLed[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+segmentLed[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+segmentLed[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

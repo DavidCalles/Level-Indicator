@@ -1,0 +1,34 @@
+-- PARKING INDICATOR LAB
+
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.NUMERIC_STD.ALL;
+
+-- Entity declaration
+
+entity OnesAdder is
+
+    port(binVect  : in std_logic_vector(0 to 5);     
+         onesVect : out std_logic_vector(0 to 2));    
+
+end OnesAdder;
+
+-- Architecture definition
+
+architecture Behavioral of OnesAdder is
+
+begin
+
+	process(binVect)
+		variable count : unsigned(0 to 2) := "000";
+		begin
+			 count := "000";   --initialize count variable.
+			 for i in 0 to 5 loop   --check for all the bits.
+				  if(binVect(i) = '1') then --check if the bit is '1'
+						count := count + 1; --if its one, increment the count.
+				  end if;
+			 end loop;
+			 onesVect <= std_logic_vector(count); --assign the count to output.
+	end process;
+end;
